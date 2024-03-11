@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Public Service Categories List View Controller-->
+        <scene sceneID="R12-Z3-2F3">
+            <objects>
+                <viewController storyboardIdentifier="PublicServiceCategoriesListViewController" id="rSV-dN-XAe" customClass="PublicServiceCategoriesListViewController" customModule="DiiaPublicServicesCore" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Eao-av-bYI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="9NN-AM-tV6" customClass="TopNavigationBigView" customModule="DiiaUIComponents">
+                                <rect key="frame" x="0.0" y="48" width="414" height="128"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fBk-dc-UKq" customClass="ContentLoadingView" customModule="DiiaUIComponents">
+                                <rect key="frame" x="0.0" y="176" width="414" height="686"/>
+                                <subviews>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="zsd-aB-Ohr">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="686"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="Wo8-j4-8TF">
+                                            <size key="itemSize" width="128" height="128"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells/>
+                                    </collectionView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="zsd-aB-Ohr" secondAttribute="trailing" id="1DT-Wo-AHZ"/>
+                                    <constraint firstItem="zsd-aB-Ohr" firstAttribute="top" secondItem="fBk-dc-UKq" secondAttribute="top" id="hs6-4O-x7j"/>
+                                    <constraint firstItem="zsd-aB-Ohr" firstAttribute="leading" secondItem="fBk-dc-UKq" secondAttribute="leading" id="sXY-hu-7Mb"/>
+                                    <constraint firstAttribute="bottom" secondItem="zsd-aB-Ohr" secondAttribute="bottom" id="yu4-1R-BOx"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Сервіси недоступні" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lWO-D6-bXw">
+                                <rect key="frame" x="24" y="434" width="366" height="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="4vb-YF-XfW"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="4vb-YF-XfW" firstAttribute="trailing" secondItem="lWO-D6-bXw" secondAttribute="trailing" constant="24" id="BBl-um-CRr"/>
+                            <constraint firstItem="4vb-YF-XfW" firstAttribute="leading" secondItem="fBk-dc-UKq" secondAttribute="leading" id="EoA-i0-Bb8"/>
+                            <constraint firstItem="9NN-AM-tV6" firstAttribute="top" secondItem="4vb-YF-XfW" secondAttribute="top" id="Fdh-Rx-hbF"/>
+                            <constraint firstItem="9NN-AM-tV6" firstAttribute="leading" secondItem="4vb-YF-XfW" secondAttribute="leading" id="W4Z-g2-TL3"/>
+                            <constraint firstItem="4vb-YF-XfW" firstAttribute="trailing" secondItem="9NN-AM-tV6" secondAttribute="trailing" id="ZuO-Pl-OS7"/>
+                            <constraint firstItem="lWO-D6-bXw" firstAttribute="leading" secondItem="4vb-YF-XfW" secondAttribute="leading" constant="24" id="cH9-xt-YGO"/>
+                            <constraint firstItem="fBk-dc-UKq" firstAttribute="bottom" secondItem="4vb-YF-XfW" secondAttribute="bottom" id="e4j-9B-H6y"/>
+                            <constraint firstItem="lWO-D6-bXw" firstAttribute="centerY" secondItem="Eao-av-bYI" secondAttribute="centerY" id="mve-xQ-bBw"/>
+                            <constraint firstItem="fBk-dc-UKq" firstAttribute="trailing" secondItem="4vb-YF-XfW" secondAttribute="trailing" id="nEF-hD-Uh5"/>
+                            <constraint firstItem="fBk-dc-UKq" firstAttribute="top" secondItem="9NN-AM-tV6" secondAttribute="bottom" id="yhy-m5-SOy"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="zsd-aB-Ohr" id="cw3-Gx-GoZ"/>
+                        <outlet property="contentLoadingView" destination="fBk-dc-UKq" id="AsT-gB-Ghj"/>
+                        <outlet property="emptyLabel" destination="lWO-D6-bXw" id="KhL-AH-TuU"/>
+                        <outlet property="topView" destination="9NN-AM-tV6" id="RH1-eQ-khW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Zr-9v-f6P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="89.855072463768124" y="-87.053571428571431"/>
+        </scene>
+    </scenes>
+</document>

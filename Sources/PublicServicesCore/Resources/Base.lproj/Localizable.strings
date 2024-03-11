@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+    
+*/
+
+"public_services_search" = "Пошук";
+"public_services_search_placeholder" = "Що шукаєте?";
+"public_services_search_empty" = "Не знайдено жодної послуги";
+"services_unavailable" = "😕\nУ вас немає доступних\nпослуг.";
+"services_list_title" = "Сервіси";

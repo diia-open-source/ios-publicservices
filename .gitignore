@@ -1,0 +1,11 @@
+.DS_Store
+/.build
+/DerivedData
+/Packages
+xcuserdata/
+.swiftpm/config/registries.json
+.swiftpm/xcode/package.xcworkspace/contents.xcworkspacedata
+.netrc
+
+# automation stuff
+# Scripts/swiftlint_report.html

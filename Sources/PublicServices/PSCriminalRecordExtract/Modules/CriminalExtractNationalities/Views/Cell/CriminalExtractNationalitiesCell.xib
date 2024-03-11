@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="164" id="KGk-i7-Jjw" customClass="CriminalExtractNationalitiesCell" customModule="DiiaPublicServices">
+            <rect key="frame" x="0.0" y="0.0" width="333" height="167"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="333" height="167"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="aNo-41-T83">
+                        <rect key="frame" x="24" y="0.0" width="285" height="167"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="KD4-op-AWE">
+                                <rect key="frame" x="0.0" y="0.0" width="285" height="111"/>
+                                <edgeInsets key="layoutMargins" top="16" left="16" bottom="16" right="16"/>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eg8-Xn-pQL">
+                                <rect key="frame" x="0.0" y="111" width="285" height="56"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imagePlusGray" translatesAutoresizingMaskIntoConstraints="NO" id="9xe-8o-Sfv">
+                                        <rect key="frame" x="16" y="16" width="24" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="24" id="jpA-iU-Exh"/>
+                                            <constraint firstAttribute="height" constant="24" id="rsT-we-pF6"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JBZ-E4-WbP">
+                                        <rect key="frame" x="48" y="18" width="41.333333333333343" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Fx-YJ-iLw">
+                                        <rect key="frame" x="0.0" y="0.0" width="285" height="2"/>
+                                        <color key="backgroundColor" red="0.88627450980392153" green="0.92549019607843142" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="2" id="qPu-ie-YXr"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="2Fx-YJ-iLw" firstAttribute="leading" secondItem="eg8-Xn-pQL" secondAttribute="leading" id="8wP-dB-j9K"/>
+                                    <constraint firstItem="2Fx-YJ-iLw" firstAttribute="top" secondItem="eg8-Xn-pQL" secondAttribute="top" id="Atw-IX-m6P"/>
+                                    <constraint firstItem="9xe-8o-Sfv" firstAttribute="leading" secondItem="eg8-Xn-pQL" secondAttribute="leading" constant="16" id="BOT-J6-bZI"/>
+                                    <constraint firstItem="9xe-8o-Sfv" firstAttribute="centerY" secondItem="eg8-Xn-pQL" secondAttribute="centerY" id="FQO-L9-Pm4"/>
+                                    <constraint firstItem="JBZ-E4-WbP" firstAttribute="leading" secondItem="9xe-8o-Sfv" secondAttribute="trailing" constant="8" id="J3V-qo-Rci"/>
+                                    <constraint firstAttribute="height" constant="56" id="h7A-ko-vff"/>
+                                    <constraint firstAttribute="trailing" secondItem="2Fx-YJ-iLw" secondAttribute="trailing" id="hb8-Dm-yHt"/>
+                                    <constraint firstItem="JBZ-E4-WbP" firstAttribute="centerY" secondItem="eg8-Xn-pQL" secondAttribute="centerY" id="hwS-Tz-hE4"/>
+                                </constraints>
+                                <edgeInsets key="layoutMargins" top="16" left="16" bottom="0.0" right="16"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="0.0" right="0.0"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <integer key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="aNo-41-T83" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Ltz-eu-wvq"/>
+                    <constraint firstItem="aNo-41-T83" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="gb6-Cc-Cff"/>
+                    <constraint firstAttribute="trailing" secondItem="aNo-41-T83" secondAttribute="trailing" constant="24" id="mam-6H-Pm8"/>
+                    <constraint firstAttribute="bottom" secondItem="aNo-41-T83" secondAttribute="bottom" id="nyQ-yR-sTH"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="addImageView" destination="9xe-8o-Sfv" id="pHE-pc-Na6"/>
+                <outlet property="addLabel" destination="JBZ-E4-WbP" id="u0D-kY-QxA"/>
+                <outlet property="addViewContainer" destination="eg8-Xn-pQL" id="drg-le-Msn"/>
+                <outlet property="containerStackView" destination="aNo-41-T83" id="0QF-aa-VIA"/>
+                <outlet property="stackView" destination="KD4-op-AWE" id="PTL-Rn-a3E"/>
+            </connections>
+            <point key="canvasLocation" x="-16.030534351145036" y="-13.028169014084508"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="imagePlusGray" width="24.333333969116211" height="24"/>
+    </resources>
+</document>

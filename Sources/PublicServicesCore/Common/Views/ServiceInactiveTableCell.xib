@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="ServiceInactiveTableCell" rowHeight="64" id="wNt-pb-7Pl" customClass="ServiceInactiveTableCell" customModule="DiiaPublicServicesCore">
+            <rect key="frame" x="0.0" y="0.0" width="715" height="64"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wNt-pb-7Pl" id="L10-uQ-BML">
+                <rect key="frame" x="0.0" y="0.0" width="715" height="64"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Service" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gub-XY-a0x">
+                        <rect key="frame" x="20" y="24" width="675" height="16"/>
+                        <color key="textColor" white="0.0" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="Gub-XY-a0x" firstAttribute="top" secondItem="L10-uQ-BML" secondAttribute="top" constant="24" id="E6M-zp-McF"/>
+                    <constraint firstItem="Gub-XY-a0x" firstAttribute="leading" secondItem="L10-uQ-BML" secondAttribute="leading" constant="20" id="PTH-oj-JQM"/>
+                    <constraint firstAttribute="bottom" secondItem="Gub-XY-a0x" secondAttribute="bottom" constant="24" id="bvM-Ni-Idx"/>
+                    <constraint firstAttribute="trailing" secondItem="Gub-XY-a0x" secondAttribute="trailing" constant="20" id="oTQ-yw-zfF"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="titleLabel" destination="Gub-XY-a0x" id="R4X-vc-0iG"/>
+            </connections>
+            <point key="canvasLocation" x="-2057.2463768115945" y="164.0625"/>
+        </tableViewCell>
+    </objects>
+</document>

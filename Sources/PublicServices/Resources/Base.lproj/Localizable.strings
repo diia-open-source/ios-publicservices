@@ -1,0 +1,104 @@
+/* 
+  Localizable.strings
+  
+  
+*/
+
+// MARK: - General
+"general_next" = "Далі";
+"general_details" = "Детальніше";
+"general_sending" = "Надсилаємо";
+"general_send" = "Надіслати";
+
+// MARK: - Criminal Extract
+"criminal_extract_title" = "Витяг про несудимість";
+
+// MARK: - Criminal Certificate Request
+"criminal_certificate_request_home_title" = "Довідка про несудимість";
+"criminal_certificate_request_home_title_ok7" = "Довідка ОК-7";
+"criminal_certificate_request_home_title_ok5" = "Довідка ОК-5";
+"criminal_certificate_request_progress_label" = "Крок %d з %d";
+"criminal_certificate_request_intro_action_button" = "Почати";
+"criminal_certificate_request_set_name_page_title" = "Зміна особистих даних";
+"criminal_certificate_request_request_type" = "Тип довідки";
+"criminal_certificate_request_request_goal" = "Мета запиту";
+"criminal_certificate_request_request_goal_result" = "Мета запиту";
+"criminal_certificate_request_request_type_question" = "Який тип довідки вам потрібен?";
+"criminal_certificate_request_request_goal_question" = "Для чого вам потрібна довідка?";
+"criminal_certificate_request_address_picker_label_nationality" = "Громадянство";
+"criminal_certificate_request_set_contacts_page_title" = "Контактні дані";
+"criminal_certificate_request_result_stack_view_title" = "Дані про заявника";
+
+// MARK: - Criminal Certificate Data Type
+"criminal_certificate_data_type_title_fio" = "ПІБ:";
+"criminal_certificate_data_type_title_previousFirstName" = "Попередні імена:";
+"criminal_certificate_data_type_title_previousSecondName" = "Попередні по батькові:";
+"criminal_certificate_data_type_title_previousLastName " = "Попередні прізвища:";
+"criminal_certificate_data_type_title_gender" = "Стать:";
+"criminal_certificate_data_type_title_residence" = "Громадянство:";
+"criminal_certificate_data_type_title_birth_date" = "Дата народження:";
+"criminal_certificate_data_type_title_birth_address" = "Місце народження:";
+"criminal_certificate_data_type_title_registration_address" = "Місце реєстрації проживання:";
+"criminal_certificate_data_type_title_phone_number" = "Контактний телефон:";
+
+// MARK: - Criminal Certificate Status View
+"criminal_certificate_status_view_page_alert_title_success" = "Заяву надіслано";
+"criminal_certificate_status_view_page_alert_desc_success" = "Ми повідомимо вас, коли довідка буде готова.";
+"criminal_certificate_status_view_page_alert_emoji_success" = "⏳";
+"criminal_certificate_status_view_page_alert_title_pending" = "Заяву надіслано";
+"criminal_certificate_status_view_page_alert_title_pending_ok" = "В обробці";
+"criminal_certificate_status_view_page_alert_desc_pending" = "Ми повідомимо вас, коли довідка буде готова.";
+"criminal_certificate_status_view_page_alert_emoji_pending" = "⏳";
+"criminal_certificate_status_view_page_alert_title_ready" = "Довідка готова";
+"criminal_certificate_status_view_page_alert_desc_ready" = "Ви можете завантажити її за посиланням нижче.";
+"criminal_certificate_status_view_page_alert_emoji_ready" = "✅";
+
+// MARK: - Criminal Extract Birth Place
+"criminal_extract_birth_place_title" = "Місце народження";
+"criminal_extract_birth_place_country_title" = "Країна";
+"criminal_extract_birth_place_country_placeholder_list" = "Оберіть країну";
+"criminal_extract_birth_place_country_placeholder_manual" = "Введіть назву країни самостійно";
+"criminal_extract_birth_place_checkBox" = "Країни немає в списку";
+
+// MARK: - CriminalCertListView
+"criminal_cert_list_done" = "Готові";
+"criminal_cert_list_ordered" = "Замовлені";
+
+// MARK: - CriminalExtractRequestName
+"criminal_extract_request_name_last_name" = "Прізвище";
+"criminal_extract_request_name_first_name" = "Імʼя";
+"criminal_extract_request_name_second_name" = "По батькові";
+
+"criminal_extract_request_name_last_name_previous" = "Попереднє прізвище";
+"criminal_extract_request_name_first_name_previous" = "Попереднє імʼя";
+"criminal_extract_request_name_second_name_previous"  = "Попереднє по батькові";
+
+"criminal_extract_request_name_last_name_add" = "Додати попереднє прізвище";
+"criminal_extract_request_name_first_name_add" = "Додати попереднє імʼя";
+"criminal_extract_request_name_second_name_add"  = "Додати попереднє по батькові";
+
+// MARK: - CriminalExtractNationalities
+"criminal_extract_nationalities_add_nationality" = "Додати громадянство";
+"criminal_extract_nationalities_description" = "Вкажіть лише поточне громадянство, попередні вказувати не потрібно.";
+
+// MARK: - CriminalExtractResult
+"criminal_extract_result_type_title" = "Тип витягу";
+"criminal_extract_result_document_name" = "vytiah_pro_nesudymist_vid_";
+
+//MARK: - Certificates
+"certificate_name_from_ukr" = "від ";
+"certificate_name_from_translit" = "vid_";
+"certificate_name_from_dot" = ".";
+"certificate_name_from_dash" = "-";
+
+// MARK: - RegistrationExtract
+"registration_extract_processing" = "В ОБРОБЦІ";
+"registration_extract_done" = "ВИТЯГ ГОТОВИЙ";
+"registration_extract_action" = "Замовити витяг";
+
+// MARK: - DriverLicense Replacement
+"driver_license_replacement_registration" = "Місце реєстрації проживання";
+"address_registration_select_subtitle" = "Будь ласка, вкажіть актуальну адресу місця реєстрації проживання.";
+
+// MARK: - FOP
+"fop_contacts_title" = "Контактні дані";

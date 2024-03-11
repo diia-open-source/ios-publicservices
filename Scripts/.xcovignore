@@ -1,0 +1,27 @@
+
+# UI
+- .*ViewController.*.swift
+- .*View.swift
+- .*UIView.*.swift
+- .*Cell.*.swift
+- PublicServiceCategoriesTopPanel.swift
+
+# General
+- .*Module.swift
+- .*ApiClient.swift
+- .*Api.swift
+
+# No any logic
+- AppConstants.swift
+- PublicServiceCoreNetworkContext.swift
+- PublicServicesCoreConfigurator.swift
+- PublicServicesCoreContext.swift
+- CertificateModels.swift
+- CriminalExtractCoordinator.swift
+- .*Response.swift
+- .*Type.swift
+- .*Model.swift
+
+# Resource Files
+- R+Strings.swift
+- R+images.swift

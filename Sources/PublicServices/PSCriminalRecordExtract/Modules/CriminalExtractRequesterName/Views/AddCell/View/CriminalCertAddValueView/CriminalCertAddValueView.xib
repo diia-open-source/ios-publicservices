@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CriminalCertAddValueView" customModule="DiiaPublicServices">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="d4r-MR-L1L"/>
+                <outlet property="deleteButton" destination="KOw-bC-WS1" id="dPC-kL-FBs"/>
+                <outlet property="errorLabel" destination="MhM-kd-b6s" id="rZ4-CJ-s7O"/>
+                <outlet property="errorLabelHeightConstraint" destination="3eE-nZ-Lcs" id="OWg-8z-vN6"/>
+                <outlet property="placeholderLabel" destination="7tG-yE-3VD" id="hDT-Zn-Fsf"/>
+                <outlet property="separatorBottomContraint" destination="zI7-e6-fMz" id="zhk-c4-gPQ"/>
+                <outlet property="separatorView" destination="SZu-h2-yTI" id="bvl-3f-UIR"/>
+                <outlet property="textField" destination="DJb-RJ-gcD" id="Uge-Hv-phB"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB" userLabel="ContentView">
+            <rect key="frame" x="0.0" y="0.0" width="311" height="66"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7tG-yE-3VD">
+                    <rect key="frame" x="0.0" y="0.0" width="295" height="12"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="12" id="hDG-KL-htZ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Placeholder" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DJb-RJ-gcD">
+                    <rect key="frame" x="0.0" y="18" width="265" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="18" id="KrB-FZ-5gh"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <action selector="editingDidChange:" destination="-1" eventType="editingChanged" id="OKy-kv-qgV"/>
+                    </connections>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KOw-bC-WS1">
+                    <rect key="frame" x="287" y="21" width="24" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="Z2F-ui-e5n"/>
+                        <constraint firstAttribute="width" constant="24" id="jgP-A4-gcG"/>
+                    </constraints>
+                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="delete_icon_no_border" title=""/>
+                    <connections>
+                        <action selector="onButtonAction:" destination="-1" eventType="touchUpInside" id="bdu-YE-YNq"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SZu-h2-yTI">
+                    <rect key="frame" x="0.0" y="44" width="265" height="2"/>
+                    <color key="backgroundColor" systemColor="systemGray2Color"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="310-hB-EBI"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Введіть інформацію українською мовою." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MhM-kd-b6s">
+                    <rect key="frame" x="0.0" y="54" width="324.66666666666669" height="12"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="12" id="3eE-nZ-Lcs"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="KOw-bC-WS1" secondAttribute="trailing" id="111-Bb-6K4"/>
+                <constraint firstItem="KOw-bC-WS1" firstAttribute="leading" secondItem="DJb-RJ-gcD" secondAttribute="trailing" constant="22" id="1ex-5g-yJR"/>
+                <constraint firstItem="SZu-h2-yTI" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="2VQ-fg-45j"/>
+                <constraint firstItem="SZu-h2-yTI" firstAttribute="top" secondItem="DJb-RJ-gcD" secondAttribute="bottom" constant="8" id="2iH-Rb-uio"/>
+                <constraint firstItem="DJb-RJ-gcD" firstAttribute="top" secondItem="7tG-yE-3VD" secondAttribute="bottom" constant="6" id="4I3-as-Fdy"/>
+                <constraint firstItem="MhM-kd-b6s" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="IH9-y2-Q8S"/>
+                <constraint firstAttribute="trailing" secondItem="7tG-yE-3VD" secondAttribute="trailing" constant="16" id="MiZ-aZ-oGc"/>
+                <constraint firstItem="7tG-yE-3VD" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="WSV-2f-hYK"/>
+                <constraint firstAttribute="bottom" secondItem="MhM-kd-b6s" secondAttribute="bottom" id="ch3-4A-BHN"/>
+                <constraint firstItem="DJb-RJ-gcD" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="j4r-aj-qwz"/>
+                <constraint firstItem="7tG-yE-3VD" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="jgL-or-1h2"/>
+                <constraint firstItem="DJb-RJ-gcD" firstAttribute="trailing" secondItem="SZu-h2-yTI" secondAttribute="trailing" id="keq-fC-uwa"/>
+                <constraint firstItem="KOw-bC-WS1" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="vva-Wl-MO7"/>
+                <constraint firstItem="MhM-kd-b6s" firstAttribute="top" secondItem="SZu-h2-yTI" secondAttribute="bottom" constant="8" id="zI7-e6-fMz"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="104.58015267175573" y="-262.67605633802816"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="delete_icon_no_border" width="24" height="24"/>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

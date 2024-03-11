@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="178" id="KGk-i7-Jjw" customClass="CriminalExtractBirthPlaceCountryCell" customModule="DiiaPublicServices">
+            <rect key="frame" x="0.0" y="0.0" width="363" height="178"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="363" height="178"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Iur-7F-odF">
+                        <rect key="frame" x="24" y="0.0" width="315" height="180"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hoB-aW-BRM" customClass="CriminalExtractBirthPlaceInputView" customModule="DiiaPublicServices">
+                                <rect key="frame" x="16" y="16" width="283" height="46"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="5Pd-xn-zTw"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Whz-aX-uaX">
+                                <rect key="frame" x="16" y="78" width="283" height="20"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkbox_disabled" translatesAutoresizingMaskIntoConstraints="NO" id="owb-S2-X7E">
+                                        <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="4i6-9j-VOy"/>
+                                            <constraint firstAttribute="height" constant="20" id="wkq-SB-LHC"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jrt-tS-WBb">
+                                        <rect key="frame" x="32" y="1" width="33" height="18"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="18" id="kvG-D7-GkC"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="owb-S2-X7E" firstAttribute="leading" secondItem="Whz-aX-uaX" secondAttribute="leading" id="DEt-aN-ImP"/>
+                                    <constraint firstItem="jrt-tS-WBb" firstAttribute="centerY" secondItem="Whz-aX-uaX" secondAttribute="centerY" id="aot-or-Yuq"/>
+                                    <constraint firstAttribute="height" constant="20" id="era-by-d16"/>
+                                    <constraint firstAttribute="bottom" secondItem="owb-S2-X7E" secondAttribute="bottom" id="h5u-cc-cSz"/>
+                                    <constraint firstItem="owb-S2-X7E" firstAttribute="top" secondItem="Whz-aX-uaX" secondAttribute="top" id="xFJ-UQ-N9n"/>
+                                    <constraint firstItem="jrt-tS-WBb" firstAttribute="leading" secondItem="owb-S2-X7E" secondAttribute="trailing" constant="12" id="xqq-jD-k0U"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yig-5u-nrh" customClass="CriminalExtractBirthPlaceInputView" customModule="DiiaPublicServices">
+                                <rect key="frame" x="16" y="114" width="283" height="50"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="pAQ-qv-Pxh"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <edgeInsets key="layoutMargins" top="16" left="16" bottom="16" right="16"/>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Iur-7F-odF" secondAttribute="trailing" constant="24" id="1a4-4r-qXb"/>
+                    <constraint firstItem="Iur-7F-odF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="HIo-pt-1OX"/>
+                    <constraint firstAttribute="bottom" secondItem="Iur-7F-odF" secondAttribute="bottom" constant="24" id="oOV-SA-hl4"/>
+                    <constraint firstItem="Iur-7F-odF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="v13-WE-i8j"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="checkBoxView" destination="owb-S2-X7E" id="HfZ-ZA-wSH"/>
+                <outlet property="checkboxLabel" destination="jrt-tS-WBb" id="7C7-cr-Oxo"/>
+                <outlet property="extraCountryView" destination="Yig-5u-nrh" id="ECR-B5-URc"/>
+                <outlet property="extraCountryViewHeight" destination="pAQ-qv-Pxh" id="v43-LP-yMw"/>
+                <outlet property="mainCountryView" destination="hoB-aW-BRM" id="3gc-JG-nSN"/>
+                <outlet property="stackView" destination="Iur-7F-odF" id="aQf-bh-l02"/>
+            </connections>
+            <point key="canvasLocation" x="-37.404580152671755" y="45.070422535211272"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="checkbox_disabled" width="20" height="20"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

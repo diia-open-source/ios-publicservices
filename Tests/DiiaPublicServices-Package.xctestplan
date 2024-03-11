@@ -1,0 +1,44 @@
+{
+  "configurations" : [
+    {
+      "id" : "9A212742-5647-4FE4-9788-4A014B4EEC8C",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : {
+      "targets" : [
+        {
+          "containerPath" : "container:",
+          "identifier" : "DiiaPublicServices",
+          "name" : "DiiaPublicServices"
+        },
+        {
+          "containerPath" : "container:",
+          "identifier" : "DiiaPublicServicesCore",
+          "name" : "DiiaPublicServicesCore"
+        }
+      ]
+    }
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:",
+        "identifier" : "DiiaPublicServicesTests",
+        "name" : "DiiaPublicServicesTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:",
+        "identifier" : "DiiaPublicServicesCoreTests",
+        "name" : "DiiaPublicServicesCoreTests"
+      }
+    }
+  ],
+  "version" : 1
+}
